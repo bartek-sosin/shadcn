@@ -18,7 +18,11 @@
 - Playwright 1.62.1 matches the cached chromium-1234 (installed into `.ds-sync/` with
   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1). Tailwind CLI 4.3.3 also lives in `.ds-sync/`.
 - Overlay components (Dialog, Popover, Select open state…) need `overrides.<Name>: {"cardMode":"single","viewport":"WxH"}`
-  to render open inside the card. Batch 1 skipped Select's open state.
+  to render open inside the card (batch 2: Dialog, AlertDialog, Popover, Tooltip, Toaster use `defaultOpen` /
+  a `toast()` in useEffect). Select's open state is still not shown (closed states only).
+- Sonner: the card is named `Toaster` (the export); `pkg/index.ts` also re-exports `toast` from `sonner`.
+- Re-sync: fetch `_ds_sync.json` from the project into `.design-sync/.cache/remote-sync.json`, then run the
+  driver with `--remote` — unchanged components skip re-grading.
 
 ## Known render warns
 - `[TOKENS_MISSING]` 22 vars (`--radix-*`, `--available-height`, `--anchor-width`, `--sidebar-width`…): set at

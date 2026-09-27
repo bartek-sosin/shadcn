@@ -8,6 +8,12 @@ Compound components are built from sibling exports that ship in the same bundle:
 - **Field** (form layout): `FieldSet` › `FieldLegend`, `FieldDescription`, `FieldGroup` › `Field` (`orientation="vertical" | "horizontal" | "responsive"`) › `FieldLabel`, control, `FieldDescription` / `FieldError`. Use `FieldContent` to stack label + description beside a Switch/Checkbox; `FieldSeparator` between groups. Mark errors with `data-invalid="true"` on `Field` and `aria-invalid="true"` on the control.
 - **Select**: `Select` › `SelectTrigger` (`size="default" | "sm"`, set a width like `w-56`) › `SelectValue placeholder="…"`; `SelectContent` › `SelectGroup` › `SelectLabel`, `SelectItem value="…"`, `SelectSeparator`.
 - **RadioGroup** › `RadioGroupItem value="…" id="…"` paired with `Label htmlFor`.
+- **Alert** (`variant="default" | "destructive"`) › `AlertTitle`, `AlertDescription`, optional `AlertAction` (top-right slot, e.g. a small Button).
+- **Dialog** › `DialogTrigger asChild` + `DialogContent` (`showCloseButton`, default true) › `DialogHeader` › `DialogTitle`, `DialogDescription`; body; `DialogFooter` with `DialogClose asChild`. Control with `open`/`onOpenChange` or `defaultOpen`.
+- **AlertDialog** (confirmations) › `AlertDialogTrigger asChild`, `AlertDialogContent` (`size="default" | "sm"`) › `AlertDialogHeader` › `AlertDialogMedia` (optional icon), `AlertDialogTitle`, `AlertDialogDescription`; `AlertDialogFooter` › `AlertDialogCancel`, `AlertDialogAction` (both take Button `variant`/`size`).
+- **Popover** › `PopoverTrigger asChild`, `PopoverContent` (set a width like `w-72`) › `PopoverHeader` › `PopoverTitle`, `PopoverDescription`.
+- **Tooltip** — **requires `TooltipProvider`** (wrap the app or section once): `TooltipProvider` › `Tooltip` › `TooltipTrigger asChild`, `TooltipContent`.
+- **Toasts**: render `<Toaster />` once (e.g. `position="bottom-right"`), then call `toast("Saved")`, `toast.success(title, { description })`, `toast.error(...)` — `toast` is exported from `window.SosekSystem`.
 
 Variant props: `Button variant="default | secondary | outline | ghost | destructive | link"`, `size="xs | sm | default | lg | icon | icon-xs | icon-sm | icon-lg"`, `asChild`; `Badge variant="default | secondary | outline | destructive | ghost | link"`; `Switch size="sm | default"`; `Separator orientation="horizontal | vertical"`.
 

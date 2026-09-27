@@ -10,17 +10,18 @@ After each iteration, check cost with `/cost` in Claude Code and note it in the 
 
 | # | Date | Components | Result | Cost (fill in from `/cost`) |
 |---|------|-----------|--------|------|
-| 1 | 2026-09-27 | 12 — setup + core basics + forms | ✅ uploaded, 12/12 graded good; committed | |
+| 1 | 2026-09-27 | 12 — setup + core basics + forms | ✅ uploaded, 12/12 graded good; committed | ~150k context |
+| 2 | 2026-09-27 | 6 — feedback & overlays | ✅ uploaded, 6/6 graded good; committed | |
 
 ## Done (in Sosek System)
 
 - [x] Theme tokens (colors, radius — from `src/index.css`), Geist Variable font
 - [x] Button · Badge · Card · Separator · Label · Input · Textarea
 - [x] Checkbox · Switch · RadioGroup · Select · Field
+- [x] Alert · AlertDialog · Dialog · Tooltip · Popover · Toaster (Sonner, + `toast()`)
 
 ## To do — proposed batches (reorder freely)
 
-- [ ] **Batch 2 — feedback & overlays:** Alert · AlertDialog · Dialog · Tooltip · Popover · Sonner (toast)
 - [ ] **Batch 3 — navigation & data:** Tabs · Table · Avatar · Breadcrumb · Pagination · Skeleton
 - [ ] **Batch 4 — menus & inputs:** DropdownMenu · Command · Combobox · InputGroup · InputOTP · NativeSelect · Slider
 - [ ] **Batch 5 — layout:** Accordion · Collapsible · Sheet · Drawer · ScrollArea · Resizable · AspectRatio

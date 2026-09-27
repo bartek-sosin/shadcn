@@ -47,8 +47,68 @@
     "SelectScrollUpButton": null,
     "SelectSeparator": null,
     "SelectTrigger": null,
-    "SelectValue": null
+    "SelectValue": null,
+    "Alert": "../../src/components/ui/alert.tsx",
+    "AlertDialog": "../../src/components/ui/alert-dialog.tsx",
+    "Dialog": "../../src/components/ui/dialog.tsx",
+    "Tooltip": "../../src/components/ui/tooltip.tsx",
+    "Popover": "../../src/components/ui/popover.tsx",
+    "Toaster": "../../src/components/ui/sonner.tsx",
+    "AlertAction": null,
+    "AlertDescription": null,
+    "AlertDialogAction": null,
+    "AlertDialogCancel": null,
+    "AlertDialogContent": null,
+    "AlertDialogDescription": null,
+    "AlertDialogFooter": null,
+    "AlertDialogHeader": null,
+    "AlertDialogMedia": null,
+    "AlertDialogOverlay": null,
+    "AlertDialogPortal": null,
+    "AlertDialogTitle": null,
+    "AlertDialogTrigger": null,
+    "AlertTitle": null,
+    "DialogClose": null,
+    "DialogContent": null,
+    "DialogDescription": null,
+    "DialogFooter": null,
+    "DialogHeader": null,
+    "DialogOverlay": null,
+    "DialogPortal": null,
+    "DialogTitle": null,
+    "DialogTrigger": null,
+    "PopoverAnchor": null,
+    "PopoverContent": null,
+    "PopoverDescription": null,
+    "PopoverHeader": null,
+    "PopoverTitle": null,
+    "PopoverTrigger": null,
+    "TooltipContent": null,
+    "TooltipProvider": null,
+    "TooltipTrigger": null
   },
   "srcDir": "../../src",
-  "readmeHeader": ".design-sync/conventions.md"
+  "readmeHeader": ".design-sync/conventions.md",
+  "overrides": {
+    "Dialog": {
+      "cardMode": "single",
+      "viewport": "720x480"
+    },
+    "AlertDialog": {
+      "cardMode": "single",
+      "viewport": "720x400"
+    },
+    "Popover": {
+      "cardMode": "single",
+      "viewport": "480x320"
+    },
+    "Tooltip": {
+      "cardMode": "single",
+      "viewport": "400x160"
+    },
+    "Toaster": {
+      "cardMode": "single",
+      "viewport": "720x360"
+    }
+  }
 }
