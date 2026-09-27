@@ -30,6 +30,10 @@ Compound components are built from sibling exports that ship in the same bundle:
 - **Sheet** (side panel) › `SheetTrigger asChild`, `SheetContent side="top | right | bottom | left"` › `SheetHeader` › `SheetTitle`, `SheetDescription`; body (add `px-4`); `SheetFooter` with `SheetClose asChild`. **Drawer** (bottom sheet, Vaul) › `DrawerTrigger`, `DrawerContent` › `DrawerHeader` › `DrawerTitle`, `DrawerDescription`; `DrawerFooter` › `DrawerClose`.
 - **ScrollArea** with a fixed size (`h-56 w-48`); add `<ScrollBar orientation="horizontal" />` for horizontal scrolling. **AspectRatio** `ratio={16 / 9}` — wrap it in a plain div inside grids/flex so it isn't stretched.
 - **Resizable**: `ResizablePanelGroup orientation="horizontal | vertical"` › `ResizablePanel defaultSize="30%"` (strings = percent, numbers = pixels) separated by `ResizableHandle withHandle`; nest groups for split layouts.
+- **Item** (list rows/settings rows; `variant="default" | "outline" | "muted"`, `size="default" | "sm" | "xs"`) › `ItemMedia` (avatar/icon), `ItemContent` › `ItemTitle`, `ItemDescription`; `ItemActions` (buttons/badges). Stack in `ItemGroup` with `ItemSeparator`.
+- **Empty** (empty states) › `EmptyHeader` › `EmptyMedia variant="icon"`, `EmptyTitle`, `EmptyDescription`; `EmptyContent` for actions.
+- **ButtonGroup** (`orientation="horizontal" | "vertical"`) joins Buttons/Inputs; `ButtonGroupSeparator`, `ButtonGroupText` (static label). **ToggleGroup** `type="single" | "multiple"` (`variant`, `size`, `spacing`) › `ToggleGroupItem value`. **Toggle** `variant="default" | "outline"`, `size="sm" | "default" | "lg"`, `defaultPressed`.
+- **HoverCard** › `HoverCardTrigger asChild`, `HoverCardContent`. **Progress** `value={0–100}`. **Spinner** (inline loader, size via `size-6`). **Kbd** / `KbdGroup` for shortcuts.
 
 Variant props: `Button variant="default | secondary | outline | ghost | destructive | link"`, `size="xs | sm | default | lg | icon | icon-xs | icon-sm | icon-lg"`, `asChild`; `Badge variant="default | secondary | outline | destructive | ghost | link"`; `Switch size="sm | default"`; `Separator orientation="horizontal | vertical"`.
 

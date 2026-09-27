@@ -202,7 +202,36 @@
     "SheetFooter": null,
     "SheetHeader": null,
     "SheetTitle": null,
-    "SheetTrigger": null
+    "SheetTrigger": null,
+    "Progress": "../../src/components/ui/progress.tsx",
+    "Spinner": "../../src/components/ui/spinner.tsx",
+    "Kbd": "../../src/components/ui/kbd.tsx",
+    "Toggle": "../../src/components/ui/toggle.tsx",
+    "ToggleGroup": "../../src/components/ui/toggle-group.tsx",
+    "ButtonGroup": "../../src/components/ui/button-group.tsx",
+    "Empty": "../../src/components/ui/empty.tsx",
+    "Item": "../../src/components/ui/item.tsx",
+    "HoverCard": "../../src/components/ui/hover-card.tsx",
+    "ButtonGroupSeparator": null,
+    "ButtonGroupText": null,
+    "EmptyContent": null,
+    "EmptyDescription": null,
+    "EmptyHeader": null,
+    "EmptyMedia": null,
+    "EmptyTitle": null,
+    "HoverCardContent": null,
+    "HoverCardTrigger": null,
+    "ItemActions": null,
+    "ItemContent": null,
+    "ItemDescription": null,
+    "ItemFooter": null,
+    "ItemGroup": null,
+    "ItemHeader": null,
+    "ItemMedia": null,
+    "ItemSeparator": null,
+    "ItemTitle": null,
+    "KbdGroup": null,
+    "ToggleGroupItem": null
   },
   "srcDir": "../../src",
   "readmeHeader": ".design-sync/conventions.md",
@@ -245,6 +274,10 @@
     "Drawer": {
       "cardMode": "single",
       "viewport": "720x480"
+    },
+    "HoverCard": {
+      "cardMode": "single",
+      "viewport": "480x260"
     }
   }
 }
