@@ -14,6 +14,12 @@ Compound components are built from sibling exports that ship in the same bundle:
 - **Popover** › `PopoverTrigger asChild`, `PopoverContent` (set a width like `w-72`) › `PopoverHeader` › `PopoverTitle`, `PopoverDescription`.
 - **Tooltip** — **requires `TooltipProvider`** (wrap the app or section once): `TooltipProvider` › `Tooltip` › `TooltipTrigger asChild`, `TooltipContent`.
 - **Toasts**: render `<Toaster />` once (e.g. `position="bottom-right"`), then call `toast("Saved")`, `toast.success(title, { description })`, `toast.error(...)` — `toast` is exported from `window.SosekSystem`.
+- **Tabs** › `TabsList` (`variant="default" | "line"`) › `TabsTrigger value="…"`; then `TabsContent value="…"` per tab. Set `defaultValue` on `Tabs`.
+- **Table** › `TableCaption`, `TableHeader` › `TableRow` › `TableHead`; `TableBody` › `TableRow` › `TableCell`; optional `TableFooter`. Right-align numbers with `text-right`.
+- **Avatar** (`size="sm" | "default" | "lg"`) › `AvatarImage src`, `AvatarFallback` (initials), optional `AvatarBadge` (status dot). Stack with `AvatarGroup` + `AvatarGroupCount` ("+5").
+- **Breadcrumb** › `BreadcrumbList` › `BreadcrumbItem` › `BreadcrumbLink href` / `BreadcrumbPage` (current), separated by `BreadcrumbSeparator`; `BreadcrumbEllipsis` for collapsed levels.
+- **Pagination** › `PaginationContent` › `PaginationItem` › `PaginationPrevious`, `PaginationLink href isActive`, `PaginationEllipsis`, `PaginationNext`.
+- **Skeleton**: sized placeholder blocks — `<Skeleton className="h-4 w-48" />`, `rounded-full` for avatars.
 
 Variant props: `Button variant="default | secondary | outline | ghost | destructive | link"`, `size="xs | sm | default | lg | icon | icon-xs | icon-sm | icon-lg"`, `asChild`; `Badge variant="default | secondary | outline | destructive | ghost | link"`; `Switch size="sm | default"`; `Separator orientation="horizontal | vertical"`.
 

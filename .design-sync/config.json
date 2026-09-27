@@ -85,7 +85,40 @@
     "PopoverTrigger": null,
     "TooltipContent": null,
     "TooltipProvider": null,
-    "TooltipTrigger": null
+    "TooltipTrigger": null,
+    "Tabs": "../../src/components/ui/tabs.tsx",
+    "Table": "../../src/components/ui/table.tsx",
+    "Avatar": "../../src/components/ui/avatar.tsx",
+    "Breadcrumb": "../../src/components/ui/breadcrumb.tsx",
+    "Pagination": "../../src/components/ui/pagination.tsx",
+    "Skeleton": "../../src/components/ui/skeleton.tsx",
+    "AvatarBadge": null,
+    "AvatarFallback": null,
+    "AvatarGroup": null,
+    "AvatarGroupCount": null,
+    "AvatarImage": null,
+    "BreadcrumbEllipsis": null,
+    "BreadcrumbItem": null,
+    "BreadcrumbLink": null,
+    "BreadcrumbList": null,
+    "BreadcrumbPage": null,
+    "BreadcrumbSeparator": null,
+    "PaginationContent": null,
+    "PaginationEllipsis": null,
+    "PaginationItem": null,
+    "PaginationLink": null,
+    "PaginationNext": null,
+    "PaginationPrevious": null,
+    "TableBody": null,
+    "TableCaption": null,
+    "TableCell": null,
+    "TableFooter": null,
+    "TableHead": null,
+    "TableHeader": null,
+    "TableRow": null,
+    "TabsContent": null,
+    "TabsList": null,
+    "TabsTrigger": null
   },
   "srcDir": "../../src",
   "readmeHeader": ".design-sync/conventions.md",
@@ -109,6 +142,9 @@
     "Toaster": {
       "cardMode": "single",
       "viewport": "720x360"
+    },
+    "Table": {
+      "cardMode": "column"
     }
   }
 }

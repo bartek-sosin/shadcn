@@ -21,6 +21,8 @@
   to render open inside the card (batch 2: Dialog, AlertDialog, Popover, Tooltip, Toaster use `defaultOpen` /
   a `toast()` in useEffect). Select's open state is still not shown (closed states only).
 - Sonner: the card is named `Toaster` (the export); `pkg/index.ts` also re-exports `toast` from `sonner`.
+- Table uses `overrides.Table: {"cardMode":"column"}` (full-width card).
+- Uploads since batch 3 send only `upload.components` from the verdict + bundle/css/README (fonts/_vendor unchanged).
 - Re-sync: fetch `_ds_sync.json` from the project into `.design-sync/.cache/remote-sync.json`, then run the
   driver with `--remote` — unchanged components skip re-grading.
 
