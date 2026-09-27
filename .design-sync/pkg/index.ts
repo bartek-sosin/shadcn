@@ -55,3 +55,12 @@ export * from "../../src/components/ui/item"
 export * from "../../src/components/ui/hover-card"
 // Icons — curated Lucide set (see foundations/icons.ts)
 export * as Icons from "./foundations/icons"
+// Batch 7 — complex
+export * from "../../src/components/ui/calendar"
+export * from "../../src/components/ui/carousel"
+export * from "../../src/components/ui/chart"
+export * from "../../src/components/ui/context-menu"
+export * from "../../src/components/ui/menubar"
+export * from "../../src/components/ui/navigation-menu"
+export * from "../../src/components/ui/sidebar"
+export * as Recharts from "./foundations/recharts"

@@ -33,6 +33,11 @@
   as sub-components by the converter — conventions.md names `Icons.X` explicitly.
 - Refresh `.design-sync/.cache/remote-sync.json` from `ds-bundle/_ds_sync.json` right after every upload, or the
   next upload list re-includes already-uploaded components (harmless, just bigger).
+- Batch 7: card names are the root exports `ChartContainer` and `SidebarProvider`. Recharts ships as the
+  `Recharts` namespace (`pkg/foundations/recharts.ts`; `componentSrcMap.Recharts: null` — no card). Sidebar card uses
+  `collapsible="none"` + `SidebarProvider className="min-h-0 h-[420px]"` to render inline. ContextMenu preview opens
+  itself by dispatching a `contextmenu` event in useEffect; Menubar/NavigationMenu open via `defaultValue`.
+  Charts render grey because the theme's `--chart-*` tokens are neutral (baseColor neutral) — expected.
 - Review sheets: `python3 .design-sync/montage.py <out.png> Name1 Name2…` builds one compact image to grade from (cheaper than reading each sheet).
 - Re-sync: fetch `_ds_sync.json` from the project into `.design-sync/.cache/remote-sync.json`, then run the
   driver with `--remote` — unchanged components skip re-grading.

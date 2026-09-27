@@ -1,0 +1,25 @@
+// Curated Recharts primitives shipped as `Recharts` (window.SosekSystem.Recharts.<Name>) for use inside
+// ChartContainer. Add names here to ship more.
+export {
+  BarChart,
+  Bar,
+  LineChart,
+  Line,
+  AreaChart,
+  Area,
+  PieChart,
+  Pie,
+  Cell,
+  RadarChart,
+  Radar,
+  PolarGrid,
+  PolarAngleAxis,
+  RadialBarChart,
+  RadialBar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Label,
+  LabelList,
+  ResponsiveContainer,
+} from "recharts"
