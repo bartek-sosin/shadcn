@@ -10,6 +10,14 @@ Most components work standalone. These need a wrapper, once, high in the tree:
 - `<Toaster />` — render once, then call `toast(...)` anywhere.
 - `DirectionProvider direction="rtl"` + `dir="rtl"` on the container — right-to-left layouts.
 
+## Changing the theme (colors, radius, font)
+All colors and the corner radius are CSS variables that every component reads at runtime, so a theme change is a variable override — never restyle components one by one.
+- **The user pastes code from the shadcn theme editor** (it contains `:root { --background: …; --primary: …; --radius: … }` and usually `.dark { … }`, often alongside `@theme inline { … }`, `@import`, `@custom-variant` or `@layer base` blocks): copy **only** the `:root { … }` and `.dark { … }` blocks, verbatim, into a `<style>` that comes **after** `styles.css`. Drop everything else — it is Tailwind build syntax and does nothing here. Keep the values exactly as given (`oklch(…)`, `hsl(…)` or hex); don't convert or "improve" them.
+- **The user describes a change in words** ("make primary indigo", "rounder corners"): override just those variables the same way — e.g. `:root { --primary: oklch(0.51 0.23 277); --primary-foreground: oklch(0.98 0 0); --radius: 0.75rem; }`. Keep each `--x` / `--x-foreground` pair readable together.
+- Variable names: `--background`, `--foreground`, `--card`, `--popover`, `--primary`, `--secondary`, `--muted`, `--accent`, `--destructive`, `--border`, `--input`, `--ring`, `--chart-1…5`, `--sidebar*` (most with a `-foreground` pair), and `--radius`.
+- **Font**: set `--font-sans`, and override the two rules that hard-code Geist: `:root { --font-sans: "Inter", sans-serif; } html, .font-sans { font-family: var(--font-sans); }`. Load a non-Geist font first (e.g. a Google Fonts `<link>`); if it can't load, say so rather than silently falling back.
+- Afterwards, tell the user in plain words what changed (e.g. "primary is now indigo, corners are rounder").
+
 ## Styling: Tailwind utilities + theme tokens
 Never hard-code colors — use semantic token classes; they follow light/dark (`.dark` on an ancestor switches theme):
 | Purpose | Classes |

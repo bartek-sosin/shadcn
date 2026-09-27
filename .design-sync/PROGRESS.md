@@ -20,6 +20,7 @@ After each iteration, check cost with `/cost` in Claude Code and note it in the 
 | 7 | 2026-09-27 | 7 — complex + `Recharts` primitives | ✅ uploaded, 7/7 graded good (NavigationMenu fixed once); committed | |
 | 8 | 2026-09-27 | 7 — chat / AI kit | ✅ uploaded, 7/7 graded good (Message + Attachment fixed); committed | |
 | 9 | 2026-09-27 | Conventions tidy-up — setup/providers, styling, icons, components by purpose, gotchas | ✅ uploaded (README only); committed | |
+| 10 | 2026-09-27 | Theming guide — agent applies pasted shadcn theme code / described changes as variable overrides | ✅ uploaded (README only), override verified on a real card; committed | |
 
 ## Done (in Sosek System)
 
