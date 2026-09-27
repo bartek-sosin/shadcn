@@ -171,7 +171,38 @@
     "InputOTPSeparator": null,
     "InputOTPSlot": null,
     "NativeSelectOptGroup": null,
-    "NativeSelectOption": null
+    "NativeSelectOption": null,
+    "Accordion": "../../src/components/ui/accordion.tsx",
+    "Collapsible": "../../src/components/ui/collapsible.tsx",
+    "Sheet": "../../src/components/ui/sheet.tsx",
+    "Drawer": "../../src/components/ui/drawer.tsx",
+    "ScrollArea": "../../src/components/ui/scroll-area.tsx",
+    "ResizablePanelGroup": "../../src/components/ui/resizable.tsx",
+    "AspectRatio": "../../src/components/ui/aspect-ratio.tsx",
+    "AccordionContent": null,
+    "AccordionItem": null,
+    "AccordionTrigger": null,
+    "CollapsibleContent": null,
+    "CollapsibleTrigger": null,
+    "DrawerClose": null,
+    "DrawerContent": null,
+    "DrawerDescription": null,
+    "DrawerFooter": null,
+    "DrawerHeader": null,
+    "DrawerOverlay": null,
+    "DrawerPortal": null,
+    "DrawerTitle": null,
+    "DrawerTrigger": null,
+    "ResizableHandle": null,
+    "ResizablePanel": null,
+    "ScrollBar": null,
+    "SheetClose": null,
+    "SheetContent": null,
+    "SheetDescription": null,
+    "SheetFooter": null,
+    "SheetHeader": null,
+    "SheetTitle": null,
+    "SheetTrigger": null
   },
   "srcDir": "../../src",
   "readmeHeader": ".design-sync/conventions.md",
@@ -206,6 +237,14 @@
     "Combobox": {
       "cardMode": "single",
       "viewport": "480x340"
+    },
+    "Sheet": {
+      "cardMode": "single",
+      "viewport": "720x480"
+    },
+    "Drawer": {
+      "cardMode": "single",
+      "viewport": "720x480"
     }
   }
 }

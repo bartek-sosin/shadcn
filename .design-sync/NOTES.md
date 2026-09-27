@@ -24,6 +24,9 @@
 - Table uses `overrides.Table: {"cardMode":"column"}` (full-width card).
 - Uploads since batch 3 send only `upload.components` from the verdict + bundle/css/README (fonts/_vendor unchanged).
 - DropdownMenu/Combobox use cardMode single + `defaultOpen` (DropdownMenu also `modal={false}`). Combobox is Base UI (`items` + render-function list).
+- Resizable's card is `ResizablePanelGroup` (no `Resizable` export); react-resizable-panels v4: `orientation`, `defaultSize="30%"` (numbers = px).
+- AspectRatio inside grid/flex gets stretched — wrap it in a plain div.
+- Adding exports can shift generated .d.ts of existing components (render unchanged) — they re-upload, no regrade.
 - Review sheets: `python3 .design-sync/montage.py <out.png> Name1 Name2…` builds one compact image to grade from (cheaper than reading each sheet).
 - Re-sync: fetch `_ds_sync.json` from the project into `.design-sync/.cache/remote-sync.json`, then run the
   driver with `--remote` — unchanged components skip re-grading.

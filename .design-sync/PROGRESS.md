@@ -14,19 +14,20 @@ After each iteration, check cost with `/cost` in Claude Code and note it in the 
 | 2 | 2026-09-27 | 6 — feedback & overlays | ✅ uploaded, 6/6 graded good; committed | ~35k context |
 | 3 | 2026-09-27 | 6 — navigation & data | ✅ uploaded, 6/6 graded good; committed | ~26k context |
 | 4 | 2026-09-27 | 7 — menus & inputs | ✅ uploaded, 7/7 graded good; committed | |
+| 5 | 2026-09-27 | 7 — layout | ✅ uploaded, 7/7 graded good (AspectRatio fixed once); committed | |
 
 ## Done (in Sosek System)
 
 - [x] Theme tokens (colors, radius — from `src/index.css`), Geist Variable font
 - [x] Button · Badge · Card · Separator · Label · Input · Textarea
 - [x] Checkbox · Switch · RadioGroup · Select · Field
+- [x] Accordion · Collapsible · Sheet · Drawer · ScrollArea · Resizable (`ResizablePanelGroup`) · AspectRatio
 - [x] DropdownMenu · Command · Combobox · InputGroup · InputOTP · NativeSelect · Slider
 - [x] Tabs · Table · Avatar · Breadcrumb · Pagination · Skeleton
 - [x] Alert · AlertDialog · Dialog · Tooltip · Popover · Toaster (Sonner, + `toast()`)
 
 ## To do — proposed batches (reorder freely)
 
-- [ ] **Batch 5 — layout:** Accordion · Collapsible · Sheet · Drawer · ScrollArea · Resizable · AspectRatio
 - [ ] **Batch 6 — misc:** Progress · Spinner · Kbd · Toggle · ToggleGroup · ButtonGroup · Empty · Item · HoverCard
 - [ ] **Batch 7 — complex:** Calendar · Carousel · Chart · ContextMenu · Menubar · NavigationMenu · Sidebar
 - [ ] **Batch 8 — chat/AI kit:** Attachment · Bubble · Message · MessageScroller · Marker · Questionnaire · Direction

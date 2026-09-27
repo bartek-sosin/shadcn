@@ -26,6 +26,10 @@ Compound components are built from sibling exports that ship in the same bundle:
 - **InputGroup** › `InputGroupAddon` (`align="inline-start" | "inline-end" | "block-start" | "block-end"`) › `InputGroupText` / `InputGroupButton`; the field is `InputGroupInput` or `InputGroupTextarea` (not plain Input).
 - **InputOTP** `maxLength={6}` › `InputOTPGroup` › `InputOTPSlot index={0…}`; `InputOTPSeparator` between groups.
 - **NativeSelect** (`size="sm" | "default"`) › `NativeSelectOption value`, `NativeSelectOptGroup label`. **Slider** `defaultValue={[50]}` (two values = range), `max`, `step`.
+- **Accordion** `type="single" collapsible` (or `type="multiple"`), `defaultValue` › `AccordionItem value` › `AccordionTrigger`, `AccordionContent`. **Collapsible** › `CollapsibleTrigger asChild`, `CollapsibleContent`.
+- **Sheet** (side panel) › `SheetTrigger asChild`, `SheetContent side="top | right | bottom | left"` › `SheetHeader` › `SheetTitle`, `SheetDescription`; body (add `px-4`); `SheetFooter` with `SheetClose asChild`. **Drawer** (bottom sheet, Vaul) › `DrawerTrigger`, `DrawerContent` › `DrawerHeader` › `DrawerTitle`, `DrawerDescription`; `DrawerFooter` › `DrawerClose`.
+- **ScrollArea** with a fixed size (`h-56 w-48`); add `<ScrollBar orientation="horizontal" />` for horizontal scrolling. **AspectRatio** `ratio={16 / 9}` — wrap it in a plain div inside grids/flex so it isn't stretched.
+- **Resizable**: `ResizablePanelGroup orientation="horizontal | vertical"` › `ResizablePanel defaultSize="30%"` (strings = percent, numbers = pixels) separated by `ResizableHandle withHandle`; nest groups for split layouts.
 
 Variant props: `Button variant="default | secondary | outline | ghost | destructive | link"`, `size="xs | sm | default | lg | icon | icon-xs | icon-sm | icon-lg"`, `asChild`; `Badge variant="default | secondary | outline | destructive | ghost | link"`; `Switch size="sm | default"`; `Separator orientation="horizontal | vertical"`.
 
