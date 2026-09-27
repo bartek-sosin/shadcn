@@ -20,6 +20,12 @@ Compound components are built from sibling exports that ship in the same bundle:
 - **Breadcrumb** › `BreadcrumbList` › `BreadcrumbItem` › `BreadcrumbLink href` / `BreadcrumbPage` (current), separated by `BreadcrumbSeparator`; `BreadcrumbEllipsis` for collapsed levels.
 - **Pagination** › `PaginationContent` › `PaginationItem` › `PaginationPrevious`, `PaginationLink href isActive`, `PaginationEllipsis`, `PaginationNext`.
 - **Skeleton**: sized placeholder blocks — `<Skeleton className="h-4 w-48" />`, `rounded-full` for avatars.
+- **DropdownMenu** › `DropdownMenuTrigger asChild`, `DropdownMenuContent` (e.g. `w-56`) › `DropdownMenuLabel`, `DropdownMenuGroup` › `DropdownMenuItem` (`variant="destructive"`, `inset`) + `DropdownMenuShortcut`; `DropdownMenuCheckboxItem checked`, `DropdownMenuRadioGroup` › `DropdownMenuRadioItem`, `DropdownMenuSeparator`, `DropdownMenuSub` › `DropdownMenuSubTrigger` / `DropdownMenuSubContent`.
+- **Command** (inline palette/search list) › `CommandInput placeholder`, `CommandList` › `CommandEmpty`, `CommandGroup heading="…"` › `CommandItem` + `CommandShortcut`; `CommandSeparator`. `CommandDialog` wraps it in a modal.
+- **Combobox** (searchable select, Base UI): `<Combobox items={array} defaultValue>` › `ComboboxInput placeholder` (`showTrigger`, `showClear`), `ComboboxContent` › `ComboboxEmpty`, `ComboboxList` with a render function `{(item) => <ComboboxItem key={item} value={item}>{item}</ComboboxItem>}`. Multi-select: `ComboboxChips` › `ComboboxChip`, `ComboboxChipsInput`.
+- **InputGroup** › `InputGroupAddon` (`align="inline-start" | "inline-end" | "block-start" | "block-end"`) › `InputGroupText` / `InputGroupButton`; the field is `InputGroupInput` or `InputGroupTextarea` (not plain Input).
+- **InputOTP** `maxLength={6}` › `InputOTPGroup` › `InputOTPSlot index={0…}`; `InputOTPSeparator` between groups.
+- **NativeSelect** (`size="sm" | "default"`) › `NativeSelectOption value`, `NativeSelectOptGroup label`. **Slider** `defaultValue={[50]}` (two values = range), `max`, `step`.
 
 Variant props: `Button variant="default | secondary | outline | ghost | destructive | link"`, `size="xs | sm | default | lg | icon | icon-xs | icon-sm | icon-lg"`, `asChild`; `Badge variant="default | secondary | outline | destructive | ghost | link"`; `Switch size="sm | default"`; `Separator orientation="horizontal | vertical"`.
 

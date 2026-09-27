@@ -23,6 +23,8 @@
 - Sonner: the card is named `Toaster` (the export); `pkg/index.ts` also re-exports `toast` from `sonner`.
 - Table uses `overrides.Table: {"cardMode":"column"}` (full-width card).
 - Uploads since batch 3 send only `upload.components` from the verdict + bundle/css/README (fonts/_vendor unchanged).
+- DropdownMenu/Combobox use cardMode single + `defaultOpen` (DropdownMenu also `modal={false}`). Combobox is Base UI (`items` + render-function list).
+- Review sheets: `python3 .design-sync/montage.py <out.png> Name1 Name2…` builds one compact image to grade from (cheaper than reading each sheet).
 - Re-sync: fetch `_ds_sync.json` from the project into `.design-sync/.cache/remote-sync.json`, then run the
   driver with `--remote` — unchanged components skip re-grading.
 
