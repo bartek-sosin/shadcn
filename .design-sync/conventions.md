@@ -2,6 +2,14 @@
 
 Sosek System is a shadcn/ui (radix-nova style) component set styled with Tailwind v4 utilities and CSS-variable theme tokens. Everything is on `window.SosekSystem` — components, `Icons`, `Recharts` and `toast`. Load `styles.css`; the font is Geist Variable (`font-sans`, already applied to `html`).
 
+## For designers: how to change the look
+1. **Choose your theme.** On the shadcn theme page, pick the colors and corner roundness you like, then click **Copy code**.
+2. **Open your design.** In Claude Design, start your design with **Sosek System** as the design system.
+3. **Paste and ask.** Paste the code into the chat and write: *"Apply this theme to the design."* Every button, card, menu and input updates to your colors.
+4. **Adjust in plain words.** No code needed for small changes — just ask: *"make the main color green"*, *"rounder corners"*, *"show it in dark mode"*, *"use the Inter font"*.
+
+Good to know: a theme belongs to **one design** — in a new design, paste it again (or keep all screens in the same design). Fonts need a name the web knows, such as a Google Font (Inter, Poppins, Manrope…). If something looks off, say so in the chat (*"the buttons didn't change color"*) and it will be fixed.
+
 ## Setup — providers some components need
 Most components work standalone. These need a wrapper, once, high in the tree:
 - `TooltipProvider` — around anything using `Tooltip`.
