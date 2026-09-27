@@ -19,6 +19,7 @@ After each iteration, check cost with `/cost` in Claude Code and note it in the 
 | 6b | 2026-09-27 | Icons — 102 curated Lucide icons as `Icons.*` + icon usage in 5 previews | ✅ uploaded, graded good; committed | 4–6b ≈ 92k total |
 | 7 | 2026-09-27 | 7 — complex + `Recharts` primitives | ✅ uploaded, 7/7 graded good (NavigationMenu fixed once); committed | |
 | 8 | 2026-09-27 | 7 — chat / AI kit | ✅ uploaded, 7/7 graded good (Message + Attachment fixed); committed | |
+| 9 | 2026-09-27 | Conventions tidy-up — setup/providers, styling, icons, components by purpose, gotchas | ✅ uploaded (README only); committed | |
 
 ## Done (in Sosek System)
 
@@ -37,6 +38,7 @@ After each iteration, check cost with `/cost` in Claude Code and note it in the 
 ## To do
 
 All 61 `src/components/ui` files are in Sosek System (62 cards incl. Icons). Remaining ideas:
-- [ ] Tidy conventions.md (~14k chars) and write a designer handoff note
+- [x] Tidy conventions.md (13k chars, regrouped; every name verified against the build)
+- [ ] Designer handoff note
 - [ ] Select open-state preview
 
