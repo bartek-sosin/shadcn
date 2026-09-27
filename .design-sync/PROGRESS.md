@@ -1,0 +1,29 @@
+# Sosek System — sync progress
+
+Claude Design project: **Sosek System** — https://claude.ai/design/p/5455f0ed-02e9-4aa1-a72d-8712fbd207ca
+
+Workflow: many small iterations. Each iteration = one batch below → add its files to
+`pkg/index.ts` + `componentSrcMap` in `config.json`, author `previews/<Name>.tsx`, verify, upload.
+After each iteration, check cost with `/cost` in Claude Code and note it in the log.
+
+## Iteration log
+
+| # | Date | Components | Result | Cost (fill in from `/cost`) |
+|---|------|-----------|--------|------|
+| 1 | 2026-09-27 | 12 — setup + core basics + forms | ✅ uploaded, 12/12 graded good; committed | |
+
+## Done (in Sosek System)
+
+- [x] Theme tokens (colors, radius — from `src/index.css`), Geist Variable font
+- [x] Button · Badge · Card · Separator · Label · Input · Textarea
+- [x] Checkbox · Switch · RadioGroup · Select · Field
+
+## To do — proposed batches (reorder freely)
+
+- [ ] **Batch 2 — feedback & overlays:** Alert · AlertDialog · Dialog · Tooltip · Popover · Sonner (toast)
+- [ ] **Batch 3 — navigation & data:** Tabs · Table · Avatar · Breadcrumb · Pagination · Skeleton
+- [ ] **Batch 4 — menus & inputs:** DropdownMenu · Command · Combobox · InputGroup · InputOTP · NativeSelect · Slider
+- [ ] **Batch 5 — layout:** Accordion · Collapsible · Sheet · Drawer · ScrollArea · Resizable · AspectRatio
+- [ ] **Batch 6 — misc:** Progress · Spinner · Kbd · Toggle · ToggleGroup · ButtonGroup · Empty · Item · HoverCard
+- [ ] **Batch 7 — complex:** Calendar · Carousel · Chart · ContextMenu · Menubar · NavigationMenu · Sidebar
+- [ ] **Batch 8 — chat/AI kit:** Attachment · Bubble · Message · MessageScroller · Marker · Questionnaire · Direction

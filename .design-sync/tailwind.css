@@ -1,0 +1,18 @@
+/* Compiled into .design-sync/.cache/sosek.css for the design sync (run the
+   Tailwind CLI from inside .design-sync/ so auto-detection stays scoped here).
+   Theme tokens come from src/index.css; utilities are generated from the
+   synced components, authored previews, and a layout safelist so designs the
+   Claude Design agent builds can use common Tailwind layout/token classes. */
+@import "../src/index.css";
+@source "../src/components/ui";
+@source "./previews";
+@source not "./pkg";
+@source inline("{flex,inline-flex,grid,block,inline-block,hidden,contents,flex-col,flex-row,flex-wrap,flex-1,shrink-0,grow,items-start,items-center,items-end,items-stretch,justify-start,justify-center,justify-end,justify-between,self-center,relative,absolute,sticky,inset-0,overflow-hidden,overflow-auto,w-full,h-full,min-h-screen,h-screen,mx-auto,truncate,text-center,text-left,text-right,rounded-full,shadow-sm,shadow,shadow-md,shadow-lg,border,border-t,border-b,underline,uppercase,font-sans,font-mono,font-normal,font-medium,font-semibold,font-bold,tracking-tight,leading-none,leading-tight,leading-relaxed}");
+@source inline("{gap,gap-x,gap-y,p,px,py,pt,pb,m,mx,my,mt,mb,space-y,space-x}-{0,0.5,1,1.5,2,3,4,5,6,8,10,12,16,20,24}");
+@source inline("{w,h,size,max-w}-{4,5,6,8,10,12,16,20,24,32,40,48,64,72,80,96}");
+@source inline("max-w-{xs,sm,md,lg,xl,2xl,3xl,4xl,5xl,6xl,7xl,prose}");
+@source inline("grid-cols-{1,2,3,4,5,6,12}");
+@source inline("text-{xs,sm,base,lg,xl,2xl,3xl,4xl,5xl}");
+@source inline("rounded-{sm,md,lg,xl,2xl}");
+@source inline("{bg,text,border}-{background,foreground,card,card-foreground,popover,popover-foreground,primary,primary-foreground,secondary,secondary-foreground,muted,muted-foreground,accent,accent-foreground,destructive,border,input,ring}");
+@source inline("{sm:,md:,lg:}{flex,grid,hidden,block,flex-row,grid-cols-2,grid-cols-3,grid-cols-4}");

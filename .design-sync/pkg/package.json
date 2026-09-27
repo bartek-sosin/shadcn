@@ -1,0 +1,7 @@
+{
+  "name": "sosek-system",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Package wrapper design-sync builds Sosek System from (index.ts = curated component entry).",
+  "types": "index.d.ts"
+}
