@@ -38,6 +38,8 @@
   `collapsible="none"` + `SidebarProvider className="min-h-0 h-[420px]"` to render inline. ContextMenu preview opens
   itself by dispatching a `contextmenu` event in useEffect; Menubar/NavigationMenu open via `defaultValue`.
   Charts render grey because the theme's `--chart-*` tokens are neutral (baseColor neutral) — expected.
+- Batch 8 cards: `DirectionProvider` (root export of direction.tsx), `MessageScroller` (Provider nulled). AttachmentGroup
+  scrolls horizontally by design — previews use `flex-wrap`. MessageScroller defaults to the bottom of the thread.
 - Review sheets: `python3 .design-sync/montage.py <out.png> Name1 Name2…` builds one compact image to grade from (cheaper than reading each sheet).
 - Re-sync: fetch `_ds_sync.json` from the project into `.design-sync/.cache/remote-sync.json`, then run the
   driver with `--remote` — unchanged components skip re-grading.

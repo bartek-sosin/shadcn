@@ -18,6 +18,7 @@ After each iteration, check cost with `/cost` in Claude Code and note it in the 
 | 6 | 2026-09-27 | 9 — misc | ✅ uploaded, 9/9 graded good; committed | |
 | 6b | 2026-09-27 | Icons — 102 curated Lucide icons as `Icons.*` + icon usage in 5 previews | ✅ uploaded, graded good; committed | 4–6b ≈ 92k total |
 | 7 | 2026-09-27 | 7 — complex + `Recharts` primitives | ✅ uploaded, 7/7 graded good (NavigationMenu fixed once); committed | |
+| 8 | 2026-09-27 | 7 — chat / AI kit | ✅ uploaded, 7/7 graded good (Message + Attachment fixed); committed | |
 
 ## Done (in Sosek System)
 
@@ -25,6 +26,7 @@ After each iteration, check cost with `/cost` in Claude Code and note it in the 
 - [x] Theme tokens (colors, radius — from `src/index.css`), Geist Variable font
 - [x] Button · Badge · Card · Separator · Label · Input · Textarea
 - [x] Checkbox · Switch · RadioGroup · Select · Field
+- [x] Attachment · Bubble · Message · MessageScroller · Marker · Questionnaire · Direction (`DirectionProvider`)
 - [x] Calendar · Carousel · Chart (`ChartContainer` + `Recharts.*`) · ContextMenu · Menubar · NavigationMenu · Sidebar (`SidebarProvider`)
 - [x] Progress · Spinner · Kbd · Toggle · ToggleGroup · ButtonGroup · Empty · Item · HoverCard
 - [x] Accordion · Collapsible · Sheet · Drawer · ScrollArea · Resizable (`ResizablePanelGroup`) · AspectRatio
@@ -32,6 +34,9 @@ After each iteration, check cost with `/cost` in Claude Code and note it in the 
 - [x] Tabs · Table · Avatar · Breadcrumb · Pagination · Skeleton
 - [x] Alert · AlertDialog · Dialog · Tooltip · Popover · Toaster (Sonner, + `toast()`)
 
-## To do — proposed batches (reorder freely)
+## To do
 
-- [ ] **Batch 8 — chat/AI kit:** Attachment · Bubble · Message · MessageScroller · Marker · Questionnaire · Direction
+All 60 `src/components/ui` files are in Sosek System (62 cards incl. Icons). Remaining ideas:
+- [ ] Tidy conventions.md (~14k chars) and write a designer handoff note
+- [ ] Select open-state preview
+
