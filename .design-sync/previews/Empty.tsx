@@ -1,10 +1,10 @@
-import { Button, Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "sosek-system"
+import { Button, Empty, Icons, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "sosek-system"
 
 export const NoProjects = () => (
   <Empty className="w-full max-w-md border border-dashed">
     <EmptyHeader>
       <EmptyMedia variant="icon">
-        <span className="text-lg">📁</span>
+        <Icons.Folder />
       </EmptyMedia>
       <EmptyTitle>No projects yet</EmptyTitle>
       <EmptyDescription>Create your first project to start designing with Sosek System.</EmptyDescription>

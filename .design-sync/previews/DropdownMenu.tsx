@@ -9,6 +9,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
+  Icons,
 } from "sosek-system"
 
 export const AccountMenu = () => (
@@ -21,17 +22,21 @@ export const AccountMenu = () => (
         <DropdownMenuLabel>My account</DropdownMenuLabel>
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            Profile <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+            <Icons.User /> Profile <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            Billing <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+            <Icons.CreditCard /> Billing <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
           </DropdownMenuItem>
-          <DropdownMenuItem>Team settings</DropdownMenuItem>
+          <DropdownMenuItem>
+            <Icons.Settings /> Team settings
+          </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem checked>Email notifications</DropdownMenuCheckboxItem>
         <DropdownMenuSeparator />
-        <DropdownMenuItem variant="destructive">Log out</DropdownMenuItem>
+        <DropdownMenuItem variant="destructive">
+          <Icons.LogOut /> Log out
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   </div>

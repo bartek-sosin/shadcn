@@ -53,3 +53,5 @@ export * from "../../src/components/ui/button-group"
 export * from "../../src/components/ui/empty"
 export * from "../../src/components/ui/item"
 export * from "../../src/components/ui/hover-card"
+// Icons — curated Lucide set (see foundations/icons.ts)
+export * as Icons from "./foundations/icons"

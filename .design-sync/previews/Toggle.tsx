@@ -1,15 +1,15 @@
-import { Toggle } from "sosek-system"
+import { Icons, Toggle } from "sosek-system"
 
 export const Variants = () => (
   <div className="flex flex-wrap items-center gap-2">
-    <Toggle aria-label="Bold" defaultPressed>
-      <span className="font-bold">B</span>
+    <Toggle aria-label="Star" defaultPressed>
+      <Icons.Star />
     </Toggle>
-    <Toggle aria-label="Italic">
-      <span className="italic">I</span>
+    <Toggle aria-label="Heart">
+      <Icons.Heart />
     </Toggle>
     <Toggle variant="outline" defaultPressed>
-      Bookmark
+      <Icons.Bookmark /> Bookmark
     </Toggle>
     <Toggle variant="outline">Favorite</Toggle>
     <Toggle disabled>Disabled</Toggle>

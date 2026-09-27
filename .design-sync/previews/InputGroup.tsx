@@ -1,4 +1,4 @@
-import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput, InputGroupText, InputGroupTextarea } from "sosek-system"
+import { Icons, InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput, InputGroupText, InputGroupTextarea } from "sosek-system"
 
 export const Addons = () => (
   <div className="flex w-full max-w-sm flex-col gap-3">
@@ -12,6 +12,9 @@ export const Addons = () => (
       </InputGroupAddon>
     </InputGroup>
     <InputGroup>
+      <InputGroupAddon>
+        <Icons.Search />
+      </InputGroupAddon>
       <InputGroupInput placeholder="Search invoices…" />
       <InputGroupAddon align="inline-end">
         <InputGroupButton>Search</InputGroupButton>

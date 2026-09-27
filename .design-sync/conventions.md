@@ -37,6 +37,9 @@ Compound components are built from sibling exports that ship in the same bundle:
 
 Variant props: `Button variant="default | secondary | outline | ghost | destructive | link"`, `size="xs | sm | default | lg | icon | icon-xs | icon-sm | icon-lg"`, `asChild`; `Badge variant="default | secondary | outline | destructive | ghost | link"`; `Switch size="sm | default"`; `Separator orientation="horizontal | vertical"`.
 
+## Icons
+A curated Lucide set ships as `Icons` (`const { Icons } = window.SosekSystem`): `<Icons.Search />`, `<Icons.Plus />`, `<Icons.X />`, `<Icons.ChevronDown />`, `<Icons.Settings />`, `<Icons.Trash2 />`… — full list with previews in `components/foundations/Icons/`. **Only these ~100 names exist**; don't import `lucide-react`. Inside Button, DropdownMenuItem, InputGroupAddon, Badge etc. icons size themselves (16px); elsewhere use `className="size-4"` / `size-5`. Icon-only buttons: `<Button size="icon" aria-label="…"><Icons.Settings /></Button>`.
+
 ## Styling idiom: Tailwind utilities + theme tokens
 Never hard-code colors — use the semantic token classes, which follow light/dark themes (`.dark` on an ancestor switches to dark):
 | Purpose | Classes |

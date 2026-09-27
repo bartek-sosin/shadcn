@@ -5,7 +5,8 @@ from PIL import Image
 out_path, names = sys.argv[1], sys.argv[2:]
 parts = []
 for n in names:
-    rgb = Image.open(f"ds-bundle/_screenshots/review/general__{n}.png").convert("RGB")
+    import glob
+    rgb = Image.open(glob.glob(f"ds-bundle/_screenshots/review/*__{n}.png")[0]).convert("RGB")
     im = rgb.convert("L"); w, h = im.size; px = im.load(); keep = []; gap = 0
     for y in range(h):
         r = any(px[x, y] < 235 for x in range(0, 70, 2)) or any(px[x, y] < 250 for x in range(160, w, 2))

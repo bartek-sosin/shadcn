@@ -231,7 +231,8 @@
     "ItemSeparator": null,
     "ItemTitle": null,
     "KbdGroup": null,
-    "ToggleGroupItem": null
+    "ToggleGroupItem": null,
+    "Icons": "foundations/icons.ts"
   },
   "srcDir": "../../src",
   "readmeHeader": ".design-sync/conventions.md",
@@ -278,6 +279,9 @@
     "HoverCard": {
       "cardMode": "single",
       "viewport": "480x260"
+    },
+    "Icons": {
+      "cardMode": "column"
     }
   }
 }

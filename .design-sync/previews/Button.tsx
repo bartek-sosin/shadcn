@@ -1,4 +1,4 @@
-import { Button } from "sosek-system"
+import { Button, Icons } from "sosek-system"
 
 export const Variants = () => (
   <div className="flex flex-wrap items-center gap-2">
@@ -25,6 +25,23 @@ export const Disabled = () => (
     <Button disabled>Saving…</Button>
     <Button variant="outline" disabled>
       Unavailable
+    </Button>
+  </div>
+)
+
+export const WithIcons = () => (
+  <div className="flex flex-wrap items-center gap-2">
+    <Button>
+      <Icons.Plus /> New project
+    </Button>
+    <Button variant="outline">
+      <Icons.Download /> Export
+    </Button>
+    <Button variant="ghost" size="icon" aria-label="Settings">
+      <Icons.Settings />
+    </Button>
+    <Button variant="destructive" size="icon-sm" aria-label="Delete">
+      <Icons.Trash2 />
     </Button>
   </div>
 )

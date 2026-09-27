@@ -16,9 +16,11 @@ After each iteration, check cost with `/cost` in Claude Code and note it in the 
 | 4 | 2026-09-27 | 7 — menus & inputs | ✅ uploaded, 7/7 graded good; committed | |
 | 5 | 2026-09-27 | 7 — layout | ✅ uploaded, 7/7 graded good (AspectRatio fixed once); committed | |
 | 6 | 2026-09-27 | 9 — misc | ✅ uploaded, 9/9 graded good; committed | |
+| 6b | 2026-09-27 | Icons — 102 curated Lucide icons as `Icons.*` + icon usage in 5 previews | ✅ uploaded, graded good; committed | |
 
 ## Done (in Sosek System)
 
+- [x] Icons — 102 curated Lucide icons (`window.SosekSystem.Icons.<Name>`, list in `pkg/foundations/icons.ts`)
 - [x] Theme tokens (colors, radius — from `src/index.css`), Geist Variable font
 - [x] Button · Badge · Card · Separator · Label · Input · Textarea
 - [x] Checkbox · Switch · RadioGroup · Select · Field

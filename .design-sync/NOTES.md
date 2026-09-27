@@ -27,6 +27,12 @@
 - Resizable's card is `ResizablePanelGroup` (no `Resizable` export); react-resizable-panels v4: `orientation`, `defaultSize="30%"` (numbers = px).
 - AspectRatio inside grid/flex gets stretched — wrap it in a plain div.
 - Adding exports can shift generated .d.ts of existing components (render unchanged) — they re-upload, no regrade.
+- Icons: `pkg/foundations/icons.ts` re-exports a curated Lucide set; `pkg/index.ts` does `export * as Icons` → one
+  compound card `Icons` in group `foundations`. Lucide tree-shakes (~27 KB); the ~1.4 MB `_ds_bundle.js` is the
+  converter's unminified IIFE of all components, not icons. Single-letter names (`X`) are exported but not listed
+  as sub-components by the converter — conventions.md names `Icons.X` explicitly.
+- Refresh `.design-sync/.cache/remote-sync.json` from `ds-bundle/_ds_sync.json` right after every upload, or the
+  next upload list re-includes already-uploaded components (harmless, just bigger).
 - Review sheets: `python3 .design-sync/montage.py <out.png> Name1 Name2…` builds one compact image to grade from (cheaper than reading each sheet).
 - Re-sync: fetch `_ds_sync.json` from the project into `.design-sync/.cache/remote-sync.json`, then run the
   driver with `--remote` — unchanged components skip re-grading.
