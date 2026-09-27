@@ -36,7 +36,7 @@ After each iteration, check cost with `/cost` in Claude Code and note it in the 
 
 ## To do
 
-All 60 `src/components/ui` files are in Sosek System (62 cards incl. Icons). Remaining ideas:
+All 61 `src/components/ui` files are in Sosek System (62 cards incl. Icons). Remaining ideas:
 - [ ] Tidy conventions.md (~14k chars) and write a designer handoff note
 - [ ] Select open-state preview
 
